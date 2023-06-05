@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' href='style.css'>
+    <title>3D</title>
+</head>
+<body>
+
+<div class="container">
+    <div>
+        <div class="menuContainer">
+
+            <div class="input-div">
+                <input id="printPoints" class="toggle" type="checkbox" role="switch" name="toggle" checked>
+                <label for="printPoints" class="menuItems">
+                    <span class="slot__label">Точки</span>
+                </label>
+            </div>
+            <div class="input-div">
+                <input id="printEdges" class="toggle" type="checkbox" role="switch" name="toggle" checked>
+                <label for="printEdges" class="menuItems">
+                    <span class="slot__label">Грани</span>
+                </label>
+            </div>
+            <div class="input-div">
+                <input id="printPolygons" class="toggle" type="checkbox" role="switch" name="toggle" checked>
+                <label for="printPolygons" class="menuItems">
+                    <span class="slot__label">Полигоны</span>
+                </label>
+            </div>
+
+            <div class="figuresContainer">
+                <select class="figures" id="figures">
+                    <option value="cube">Куб</option>
+                    <option value="cone">Конус</option>
+                    <option value="ellipsoid">Эллипсоид</option>
+                    <option value="ellipticalParaboloid">Эллиптический параболоид</option>
+                    <option value="hyperbolicParaboloid">Гиперболический параболоид</option>
+                    <option value="single-surface-hyperboloid">Однополосный гиперболоид</option>
+                    <option value="two-surface-hyperboloid">Двухполосный гиперболоид</option>
+                    <option value="sphere">Сфера</option>
+                    <option value="ellipticalCylinder">Эллиптический цилиндр</option>
+                    <option value="parabolicCylinder">Параболический цилиндр</option>
+                    <option value="hyperbolicCylinder">Гиперболический цилиндр</option>
+                    <!--<option value="sunSystem">Солнечная система</option>-->
+                </select>
+            </div>
+        </div>
+        <canvas id="canvas" class="canvasField"></canvas>
+    </div>
+    <div class="settings">
+
+    </div>
+
+</div>
+    <script src="3D/Math_3D.js"></script>
+    <script src="2D/Graph_2D.js"></script>
+    <script src="3D/Graph_3D.js"></script>
+
+    <script src="3D/entities/Point.js"></script>
+    <script src="3D/entities/Light.js"></script>
+    <script src="3D/entities/Polygon.js"></script>
+    <script src="3D/entities/Edge.js"></script>
+
+    <script src="3D/figures/Figure.js"></script>
+    <script src="3D/figures/sphereLike/SphereLike.js"></script>
+    <script src="3D/figures/Cube.js"></script>
+    <script src="3D/figures/Cone.js"></script>
+    <script src="3D/figures/Sphere.js"></script>
+    <script src="3D/figures/Ellipse.js"></script>
+    <script src="3D/figures/EllipticalParaboloid.js"></script>
+    <script src="3D/figures/ParabolicCylinder.js"></script>
+    <script src="3D/figures/SingleSurfaceHyperboloid.js"></script>
+    <script src="3D/figures/TwoSurfaceHyperboloid.js"></script>
+    <script src="3D/figures/EllipticalCylinder.js"></script>
+    <script src="3D/figures/HyperbolicCylinder.js"></script>
+    <script src="3D/figures/HyperbolicParaboloid.js"></script>
+
+    <script src="settings/Settings.js"></script>
+    <script src="settings/CubeSettings.js"></script>
+    <script src="settings/SphereSettings.js"></script>
+    <script src="settings/HyperboloidSettings.js"></script>
+    <script src="settings/EllipticalCylinderSettings.js"></script>
+    <script src="settings/HyperbolicCylinderSettings.js"></script>
+
+    <script src="main.js"></script>
+</body>
+</html>

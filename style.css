@@ -1,0 +1,105 @@
+.menuContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 20px 0;
+}
+
+.figures {
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 14px;
+    border-bottom: 1px solid black;
+}
+
+.figuresContainer {
+    width: 220px;
+    margin-top: 14px;
+}
+
+.bot2:hover,.bot2:focus{
+    background-position: 0 -102%;
+}
+
+.container {
+    padding-top: 50px;
+    width: 800px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.settings {
+    width: 200px;
+}
+
+.imgSettings {
+    margin-left: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+.imgSettings:hover {
+    cursor: pointer;
+}
+
+.form {
+    width: 200px;
+    background: #fff;
+    font: inherit;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0 , .1);
+    border: 0;
+    outline: 0;
+    padding: 22px 18px;
+    margin-bottom: 10px;
+}
+
+
+.menuItems {
+    font-family: Arial, sans-serif;
+    font-size: .9em;
+    letter-spacing: 0.1em;
+    line-height: 1;
+    overflow: hidden;
+    color: black;
+    text-align: center;
+}
+
+.input-div {
+    width: 220px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+@media (min-width: 768px) {
+    .button-53 {
+        padding: .75rem 3rem;
+        font-size: 1.12rem;
+    }
+}
+
+
+
+
+.divContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.colorH1 {
+    font-family: comic sans ms;
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+    line-height: 3;
+    
+    overflow: hidden;
+    color: black;
+    text-align: center;
+    font-weight: normal;
+    margin-right: 12px;
+}
+
