@@ -75,9 +75,45 @@ class Tor extends Figure {
                 //         }
                 //       }
 
-             this.polygons[1].setColor('#ff0000');
-             this.polygons[2].setColor('#ff0000');
-             this.polygons[3].setColor('#ff0000');
+
+                /**
+* ZEBRA
+*
+* */
+// for (let i = 0; i < 2*count; i += 2) {
+// for (let k = i; k < this.polygons.length; k += 4*count) {
+// this.polygons[k].setColor('#7ff566')
+// }
+// }
+
+/**
+*
+* Vertical zebra
+* */
+// for (let i = 0; i < 2*count; i += 4) {
+// for (let k = i; k < this.polygons.length; k += 2*count) {
+// this.polygons[k].setColor('#7ff566')
+// }
+// }
+
+/**
+*
+* RANDOM COLOR
+* */
+// let color2 = [];
+// let r2;
+// let g2;
+// let b2;
+// for (let i = 0; i <= this.polygons.length; i++) {
+// r2 = Math.floor(Math.random() * (256));
+// g2 = Math.floor(Math.random() * (256));
+// b2 = Math.floor(Math.random() * (256));
+// color2[i] = '#' + r2.toString(16) + g2.toString(16) + b2.toString(16);
+// }
+
+// for (let fuck = 0; fuck < this.polygons.length; fuck++) {
+// this.polygons[fuck].setColor(color2[fuck]);
+// }
              
               
 

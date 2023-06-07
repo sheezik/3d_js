@@ -116,9 +116,9 @@ class SphereLike extends Figure {
         
                 // }
             //Окошко
-            //this.polygons.splice(215,4); прорезает (индекс полигона,кол-во полигонов после(прорезать) )
-            //this.polygons.splice(215,2);
-            //this.polygons.splice(233,2);
+            //this.polygons.splice(215,4); //прорезает (индекс полигона,кол-во полигонов после(прорезать) )
+            this.polygons.splice(215,2);
+            this.polygons.splice(233,2);
             
 
 
