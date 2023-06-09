@@ -59,11 +59,19 @@ class Graph_2D {
         this.context.closePath();
     }
 
-    polygon(points = [], color = '#ffffff') {
+    polygon(points = [], color = '#ffffff',ass = 0) {
         if (points.length >= 3) {
             this.context.beginPath();
             this.context.fillStyle = color;
             this.context.moveTo(this.fromEulerToCanvas_X(points[0].x), this.fromEulerToCanvas_Y(points[0].y));
+
+            // for (let i = 0; i < points.length; i++) {
+            //     this.context.fillStyle = 'black';
+            //     this.context.font = `15 px Arial`;
+            //     console.log(ass);
+            //     this.context.fillText(`${ass}`, this.fromEulerToCanvas_X(points[0].x), this.fromEulerToCanvas_Y(points[0].y));
+            // }
+            // this.context.fillStyle = color;
 
             for (let i = 1; i < points.length; i++) {
                 this.context.lineTo(this.fromEulerToCanvas_X(points[i].x), this.fromEulerToCanvas_Y(points[i].y));

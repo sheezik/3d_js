@@ -60,6 +60,9 @@ class Graph_3D {
         this.math_3D.calcDistance(figure, this.LIGHT, 'lumen');
         this.math_3D.sortByArtistAlgorithm(figure.polygons);
 
+        let ass = 0;
+
+
         figure.polygons.forEach(polygon => {
             //polygon.setColor(figure.figureColor);
             let {r, g, b} = polygon.color;
@@ -84,9 +87,10 @@ class Graph_3D {
                         x: 2.4*this.math_3D.xs(point),
                         y: 2.4*this.math_3D.ys(point)
                     }
-                })*/, polygon.rgbToHex(r, g, b)
+                })*/, polygon.rgbToHex(r, g, b),ass
             )
-        })
+            ass++;
+        } )
     }
 
     wheel(event) {
