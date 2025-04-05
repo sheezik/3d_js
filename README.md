@@ -1,2 +1,2 @@
 # 3d_js
-figures 
+js canvas react
